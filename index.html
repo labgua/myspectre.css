@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Hello myspectre.css</title>
+        <link rel="stylesheet" type="text/css" href="dist/css/myspectre.css" />
+        <link rel="stylesheet" type="text/css" href="dist/css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="dist/css/themes.css" />
+        <script type="text/javascript" src="dist/js/myspectre.css.js"></script>
+
+        <style type="text/css">
+        	.big-icon{
+        		font-size: 100pt;
+        	}
+        	.space{
+        		padding: 1rem;
+        	}
+        </style>
+
+    </head>
+    <body>
+    	<section class="fixed top" >
+			<ul class="tab" color="white" >
+				<li class="tab-item menu" onclick="toggle_small_tab(this);"></li>
+			    <li class="tab-item active"><a href="#">Music</a></li>
+			    <li class="tab-item"><a href="#">Playlists</a></li>
+			    <li class="tab-item"><a href="#">Radio</a></li>
+			    <li class="tab-item"><a href="javascript:open_modal('#myModal')">Modal</a></li>
+				<li class="tab-item dropdown-hover">
+	    			<a href="#">dropHover</a>
+	    			<div class="dropdown-content shadow" >
+	    				<a href="#1">sublink1</a>
+	    				<a href="#2">sublink2</a>
+	    				<a href="#3">sublink3</a>
+	    			</div>
+	    		</li>
+				<li class="tab-item">
+	    			<a href="#" onclick="open_menu(this);" >dropClick</a>
+	    			<div class="dropdown-content shadow" >
+	    				<a href="#1">sublink1</a>
+	    				<a href="#2">sublink2</a>
+	    				<a href="#3">sublink3</a>
+	    			</div>
+	    		</li>
+			</ul>
+		</section>
+
+    	<section class="text-center padding-lg" color="black" animate="top" style="margin-top: 4rem;">
+    		<h1 animate="opacity" >Hello myspectre.css</h1>
+    		<p>Questo &egrave; un esmepio di codice che usa il mio framework myspectre</p>
+    	</section>
+
+    	<div class="divider"></div>
+
+    	<section class="container">
+    		<div class="columns">
+	    		<div class="column col-xs-4 text-center">
+	    			<div class="space light-shadow hover-shadow">
+						<h4>Responsive</h4>
+						<i class="big-icon icon icon-display"></i>
+						<p>Built-in responsiveness</p>
+						<p>Mobile first fluid grid</p>
+						<p>Fits any screen sizes</p>
+						<p>PC Tablet and Mobile</p>
+					</div>
+	    		</div>
+	    		<div class="column col-xs-4 text-center">
+	    			<div class="space light-shadow hover-shadow">
+						<h4>Standard CSS</h4>
+						<i class="big-icon icon icon-css3"></i>
+						<p>Standard CSS only</p>
+						<p>Easy to learn</p>
+						<p>No need for jQuery</p>
+						<p>No JavaScript library</p>
+					</div>
+	    		</div>
+	    		<div class="column col-xs-4 text-center">
+	    			<div class="space light-shadow hover-shadow">
+						<h4>Design</h4>
+						<i class="big-icon icon icon-eye"></i>
+						<p>Paper like design</p>
+						<p>Bold colors and shadows</p>
+						<p>Equal across platforms</p>
+						<p>Equal across devices</p>
+					</div>
+	    		</div>
+    		</div>
+    	</section>
+
+    	<div class="divider"></div>
+
+    	<section class="container">
+    		<h2 class="text-center">Blockquote</h2>
+    		<p class="text-center">Mostriamo ora un esmepio di citazione, in genere si usa il blockquote.</p>
+
+    		<div style="padding:0 15%;">
+    		<blockquote color="green">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                <cite>- Source</cite>
+            </blockquote>
+            </div>
+    	</section>
+
+    	<div class="divider"></div>
+
+    	<section class="container text-center">
+			<h2>I bottoni</h2>
+			<p>Sono diversi rispetto a quelli proposti da spectre.css, si usa la classe sul tag ancora.</p>
+			<p>Ma trovi differenze tra button e ancora? Se hanno la classe <span color="purple" class="label">.btn</span> devono essere <i>indistinguibili</i> .</p>
+			<p>Perche specificare sempre la classe? Su <span class="label">button</span> non esiste la pseudoclasse <span color="blue" class="label">:hover</span> e per tanto molti effetti grafici non sarebbero possibili!</p>
+    		<div class="empty">
+    			<p class="text-center" >
+	    			<a class="btn btn-lg" color="blue"><span class="icon icon-markunread"></span> large button</a>
+	    			<a class="btn" color="red"><span class="icon icon-markunread"></span> normal button</a>
+					<a class="btn btn-sm" color="yellow"><span class="icon icon-markunread"></span> small button</a>
+				</p>
+				<p>
+					<button class="btn btn-lg" color="blue"><span class="icon icon-markunread"></span> large button</button>
+	    			<button class="btn" color="red"><span class="icon icon-markunread"></span> normal button</button>
+					<button class="btn btn-sm" color="yellow"><span class="icon icon-markunread"></span> small button</button>
+				</p>
+    		</div>
+    	</section>
+
+		<div class="divider"></div>
+
+		<section class="container" style="padding-left:8rem;padding-right:8rem;">
+			<h2 class="text-center">I Form</h2>
+			<p class="text-center">
+				I form sono gli stessi di spectre.css; per tanto li mostriamo di seguito e testiamo le regole (quelli del sito)
+			</p>
+			<div class="columns">
+				<div class="column col-xs-6">
+						<form action="#forms">
+	                        <div class="form-group">
+	                            <label for="input-example-1" class="form-label">Name</label>
+	                            <input type="text" placeholder="Name" id="input-example-1" class="form-input is-danger">
+	                        </div>
+	                        <div class="form-group has-success">
+	                            <label for="input-example-2" class="form-label">Email</label>
+	                            <input type="email" placeholder="Email" id="input-example-2" class="form-input">
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="form-label">Gender</label>
+	                            <label class="form-radio">
+	                                <input type="radio" name="gender">
+	                                <i class="form-icon"></i> Male
+	                            </label>
+	                            <label class="form-radio">
+	                                <input type="radio" checked="" name="gender">
+	                                <i class="form-icon"></i> Female
+	                            </label>
+	                        </div>
+	                        <div class="form-group hide">
+	                            <label class="form-file">
+	                                <input type="file" id="file">
+	                                <span class="file-custom"></span>
+	                            </label>
+	                        </div>
+	                        <div class="form-group">
+	                            <select class="form-select">
+	                                <option>Choose an option</option>
+	                                <option>Slack</option>
+	                                <option>Skype</option>
+	                                <option>Hipchat</option>
+	                            </select>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="form-switch">
+	                                <input type="checkbox">
+	                                <i class="form-icon"></i> Send me emails with news and tips
+	                            </label>
+	                        </div>
+	                        <div class="form-group">
+	                            <label for="input-example-3" class="form-label">Message</label>
+	                            <textarea rows="3" placeholder="Textarea" id="input-example-3" class="form-input"></textarea>
+	                        </div>
+	                        <div class="form-group">
+	                            <label class="form-checkbox">
+	                                <input type="checkbox">
+	                                <i class="form-icon"></i> Remember me
+	                            </label>
+	                        </div>
+	                        <div class="form-group">
+	                            <button type="submit" class="btn">Submit</button>
+	                            <button type="reset" class="btn trasparent">Cancel</button>
+	                        </div>
+                    	</form>
+				</div>
+				<div class="column col-xs-6">
+					<form action="#forms" class="form-horizontal">
+					    <div class="form-group">
+					        <div class="col-sm-3">
+					            <label for="input-example-4" class="form-label">Name</label>
+					        </div>
+					        <div class="col-sm-9">
+					            <input type="text" placeholder="Name" id="input-example-4" class="form-input">
+					        </div>
+					    </div>
+					    <div class="form-group">
+					        <div class="col-sm-3">
+					            <label for="input-example-5" class="form-label">Email</label>
+					        </div>
+					        <div class="col-sm-9">
+					            <input type="email" placeholder="Email" id="input-example-5" class="form-input">
+					        </div>
+					    </div>
+					    <div class="form-group">
+					        <div class="col-sm-3">
+					            <label class="form-label">Gender</label>
+					        </div>
+					        <div class="col-sm-9">
+					            <label class="form-radio">
+					                <input type="radio" name="gender">
+					                <i class="form-icon"></i> Male
+					            </label>
+					            <label class="form-radio">
+					                <input type="radio" checked="" name="gender">
+					                <i class="form-icon"></i> Female
+					            </label>
+					        </div>
+					    </div>
+					    <div class="form-group">
+					        <div class="col-sm-3"></div>
+					        <div class="col-sm-9">
+					            <select class="form-select">
+					                <option>Choose an option</option>
+					                <option>Slack</option>
+					                <option>Skype</option>
+					                <option>Hipchat</option>
+					            </select>
+					        </div>
+					    </div>
+					    <div class="form-group">
+					        <div class="col-sm-3"></div>
+					        <div class="col-sm-9">
+					            <label class="form-switch">
+					                <input type="checkbox">
+					                <i class="form-icon"></i> Send me emails with news and tips
+					            </label>
+					        </div>
+					    </div>
+					    <div class="form-group">
+					        <div class="col-sm-3">
+					            <label for="input-example-6" class="form-label">Message</label>
+					        </div>
+					        <div class="col-sm-9">
+					            <textarea rows="3" placeholder="Textarea" id="input-example-6" class="form-input"></textarea>
+					        </div>
+					    </div>
+					    <div class="form-group">
+					        <div class="col-sm-3"></div>
+					        <div class="col-sm-9">
+					            <label class="form-checkbox">
+					                <input type="checkbox">
+					                <i class="form-icon"></i> Remember me
+					            </label>
+					        </div>
+					    </div>
+					    <div class="form-group">
+					        <div class="col-sm-3"></div>
+					        <div class="col-sm-9">
+					            <button type="submit" class="btn">Submit</button>
+					            <button type="reset" class="btn trasparent">Cancel</button>
+					        </div>
+					    </div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="container">
+			<h2 class="text-center">Tabelle</h2>
+			<p class="text-center">In questa sezione facciamo vedere la tabella classica, ci si aspetta la tabella di spectre.css</p>
+
+			<table class="table table-striped table-hover">
+			    <thead>
+			        <tr>
+			            <th>name</th>
+			            <th>duration</th>
+			            <th>genre</th>
+			            <th>release date</th>
+			        </tr>
+			    </thead>
+			    <tbody>
+			        <tr>
+			            <td>The Shawshank Redemption</td>
+			            <td>2h 22min</td>
+			            <td>Crime, Drama</td>
+			            <td>14 October 1994 <span class="label">USA</span></td>
+			        </tr>
+			        <tr>
+			            <td>The Godfather</td>
+			            <td>2h 55min</td>
+			            <td>Crime, Drama</td>
+			            <td>24 March 1972 <span class="label">USA</span></td>
+			        </tr>
+			        <tr>
+			            <td>Schindler's List</td>
+			            <td>3h 15min</td>
+			            <td>Biography, Drama, History</td>
+			            <td>4 February 1994 <span class="label">USA</span></td>
+			        </tr>
+			        <tr>
+			            <td>Se7en</td>
+			            <td>2h 7min</td>
+			            <td>Crime, Drama, Mystery</td>
+			            <td>24 March 1972 <span class="label">USA</span></td>
+			        </tr>
+			    </tbody>
+			</table>
+
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="container text-center">
+			<h2>Tooltip</h2>
+			<p>In questo esempio di vede come agisce il tooltip, in genere attivato sui bottoni</p>
+			<p><a class="btn tooltip" data-tooltip="Lorem ipsum dolor sit amet">Ciao Belo!</a></p>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="container text-center">
+			<h2>Badges</h2>
+			<p>In qeusta sezione vediamo come si vedono i badge.</p>
+			<p>Sono molto utili, spesso si usano per le notifiche di app</p>
+			<div class="columns">
+				<div class="column col-xs-3">
+					<span class="badge" data-badge="1">Notifications</span>
+				</div>
+				<div class="column col-xs-3">
+					<span class="badge" data-badge="9">Notifications</span>
+				</div>
+				<div class="column col-xs-3">
+					<span class="badge" data-badge="999">Notifications</span>
+				</div>
+				<div class="column col-xs-3">
+					<span class="badge" data-badge="X">Notifications</span>
+				</div>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="container">
+			<h1 class="text-center">Toast</h1>
+			<p class="text-center">In questa sezione vediamo come vengono mostrati i toast</p>
+
+			<div class="columns">
+			    <div class="column">
+			        <div class="toast">
+			            <button class="btn btn-clear float-right" onclick="cancel_toast(this);"></button>
+			            <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			        </div>
+			    </div>
+			    <div class="column">
+			        <div class="toast" color="blue">
+			            <button class="btn btn-clear float-right" onclick="cancel_toast(this);"></button>
+			            <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			        </div>
+			    </div>
+			</div>
+
+			<div class="columns">
+			    <div class="column">
+			        <div class="toast" color="green">
+			            <button class="btn btn-clear float-right" onclick="cancel_toast(this);"></button>
+			            <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			        </div>
+			    </div>
+			    <div class="column">
+			        <div class="toast" color="red">
+			            <button class="btn btn-clear float-right" onclick="cancel_toast(this);"></button>
+			            <span class="icon icon-error_outline"></span> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+			        </div>
+			    </div>
+			</div>
+
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="container">
+			<h2 class="text-center">Card</h2>
+			<p class="text-center">Sono dei container molto flessibili</p>
+			<div class="columns">
+				<div class="column col-xs-4">
+					<div class="card">
+					    <div class="card-image">
+					        <img src="demo/img/osx-el-capitan.jpg" class="img-responsive">
+					    </div>
+					    <div class="card-header">
+					        <h4 class="card-title">Microsoft</h4>
+					        <h6 class="card-meta">Software and hardware</h6>
+					    </div>
+					    <div class="card-body">
+					        Empower every person and every organization on the planet to achieve more.
+					    </div>
+					    <div class="card-footer">
+					        <a class="btn btn-primary" href="#">Do</a>
+					    </div>
+					</div>
+				</div>
+				<div class="column col-xs-4">
+					<div class="card">
+					    <div class="card-header">
+					        <h4 class="card-title">Apple</h4>
+					        <h6 class="card-meta">Hardware and software</h6>
+					    </div>
+					    <div class="card-image">
+					        <img src="demo/img/osx-yosemite.jpg" class="img-responsive">
+					    </div>
+					    <div class="card-body">
+					        To make a contribution to the world by making tools for the mind that advance humankind.
+					    </div>
+					    <div class="card-footer">
+				            <button class="btn btn-primary">Buy</button>
+				            <button class="btn">Buy</button>
+				            <button class="btn">Buy</button>
+					    </div>
+					</div>
+				</div>
+				<div class="column col-xs-4">
+					<div class="card">
+					        <div class="card-header">
+					            <h4 class="card-title">Google</h4>
+					            <h6 class="card-meta">Software and hardware</h6>
+					        </div>
+					        <div class="card-body">
+					            Organize the world’s information and make it universally accessible and useful.
+					        </div>
+					        <div class="card-image">
+					            <img src="demo/img/osx-yosemite-2.jpg" class="img-responsive">
+					        </div>
+					    </div>
+					</div>
+			</div>
+		</section>	
+
+		<div class="divider"></div>
+
+		<section class="container">
+			<h2 class="text-center">Chip</h2>
+			<p class="text-center">Chips are complex entities in small blocks. </p>
+			<div class="text-center">
+				<div class="chip-sm">
+				    <span class="chip-name">Crime</span>
+				    <button class="btn btn-clear"></button>
+				</div>
+
+				<div class="chip-sm">
+				    <span class="icon icon-favorite_border"></span>
+				    <span class="chip-name">Drama</span>
+				    <button class="btn btn-clear"></button>
+				</div>
+
+				<div class="chip-sm">
+				    <img src="demo/img/avatar-1.png" class="avatar" />
+				    <span class="chip-name">Yan Zhu</span>
+				    <button class="btn btn-clear"></button>
+				</div>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="container">
+			<h1 class="text-center">Navigation</h1>
+			<p class="text-center">Il concetto di navigation in uso dal framework &egrave; basato sui componenti <span class="label">breadcrumb</span> e <span class="label">tab</span>.</p>
+			<div class="columns">
+				<div class="column">
+					<ul class="breadcrumb">
+					    <li class="breadcrumb-item">
+					        <a href="#">Home</a>
+					    </li>
+					    <li class="breadcrumb-item">
+					        <a href="#">Profile</a>
+					    </li>
+					    <li class="breadcrumb-item">
+					        <a href="#">Change avatar</a>
+					    </li>
+					</ul>
+				</div>
+				<div class="column">
+					<ul class="tab">
+					    <li class="tab-item active">
+					        <a href="#">Music</a>
+					    </li>
+					    <li class="tab-item">
+					        <a href="#">Playlists</a>
+					    </li>
+					    <li class="tab-item">
+					        <a href="#">Radio</a>
+					    </li>
+					    <li class="tab-item">
+					        <a href="#">Connect</a>
+					    </li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+	    <div id="myModal" class="modal-container">
+	        <div class="modal-header">
+	            <button class="btn btn-clear float-right" onclick="close_modal(this);"></button>
+	            <div class="modal-title">1 Modal title</div>
+	        </div>
+	        <div class="modal-body">
+	            <div class="content">
+	                <!-- content here -->
+	            </div>
+	        </div>
+	        <div class="modal-footer">
+	            <button class="btn" onclick="close_modal(this);">Close</button>
+	            <button class="btn" onclick="open_modal('#myModal2');" >OpenModal2</button>
+	        </div>
+	    </div>
+
+	   	<div id="myModal2" class="modal-container">
+	        <div class="modal-header">
+	            <button class="btn btn-clear float-right" onclick="close_modal(this);"></button>
+	            <div class="modal-title">2 Modal title</div>
+	        </div>
+	        <div class="modal-body">
+	            <div class="content">
+	                <!-- content here -->
+	            </div>
+	        </div>
+	        <div class="modal-footer">
+	            <button class="btn" onclick="close_modal(this);">Close</button>
+	            <button class="btn">Share</button>
+	        </div>
+	    </div>
+
+
+    	<section class="container" color="black" style="margin-top: 30px;">
+			<h2>Footer</h2>
+			<p>Powered by Sergio Guastaferro with <a href="#">myspectre.css</a> .</p>
+			<p>Remeber to check out our <a class="btn" color="yellow">spectre.css reference</a></p>
+    	</section>
+
+
+
+
+    </body>
+</html>

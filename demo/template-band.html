@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Band Template - myspectre.css</title>
+        <link rel="stylesheet" type="text/css" href="css/myspectre.css" />
+        <link rel="stylesheet" type="text/css" href="css/icons.css" />
+        <link rel="stylesheet" type="text/css" href="css/themes.css" />
+        <script type="text/javascript" src="js/myspectre.css.js"></script>
+
+        <style type="text/css">
+            .tab-item.active a:hover{
+                color: #333;
+                background-color: black;
+            }
+            .tab-item.active a{
+                border: none !important;
+            }
+
+            #myJumbo img{
+                width:100%;
+            }
+            .slide{
+                position: relative;
+            }
+
+            .pad-list{
+                padding: 0.5rem 1rem;
+            }
+
+            .card{
+                border: none;
+            }
+
+            .footer .icon{
+                font-size: 25px;
+            }
+            .footer .btn{
+                border: none;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <section class="fixed top" >
+            <ul class="tab" color="black">
+                <li class="tab-item menu" onclick="toggle_small_tab(this);"></li>
+                <li class="tab-item active"><a href="#">HOME</a></li>
+                <li class="tab-item"><a href="#">BAND</a></li>
+                <li class="tab-item"><a href="#">TOUR</a></li>
+                <li class="tab-item"><a href="#">CONTACT</a></li>
+                <li class="tab-item dropdown-hover">
+                    <a href="#">MORE <span class="icon icon-circle-down"></span></a>
+                    <div class="dropdown-content shadow" >
+                        <a href="#1">MERCHANDISER</a>
+                        <a href="#2">EXTRAS</a>
+                        <a href="#3">MEDIA</a>
+                    </div>
+                </li>
+                <li class="tab-item float-right"> 
+                    <a hover-color="red" href="#"><span class="icon icon-search"></span></a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="myJumbo">
+            <div class="slide">
+                <img class="img-responsive" src="img/img_chicago.jpg"/>
+                <div class="text-center abs bottom" text="white" >
+                    <h3>Prima Slide!</h3>
+                    <p>Questo &egrave; il sottotitolo del jumbo</p>
+                </div>
+            </div>
+            <div class="slide hide">
+                <img class="img-responsive" src="img/img_la.jpg"/>
+                <div class="text-center abs bottom" text="white" >
+                    <h3>Seconda Slide!</h3>
+                    <p>Questo &egrave; il sottotitolo del jumbo</p>
+                </div>
+            </div>
+            <div class="slide hide">
+                <img class="img-responsive" src="img/img_ny.jpg"/>
+                <div class="text-center abs bottom" text="white" >
+                    <h3>Terza Slide!</h3>
+                    <p>Questo &egrave; il sottotitolo del jumbo</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container space-md padding-lg">
+            <h2 class="text-center">THE BAND</h2>
+            <p class="text-center"><i>We love music</i></p>
+            <p class="">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur tuttincul
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="columns">
+              <div class="column text-center">
+                <p>Name</p>
+                <img style="width:60%" alt="Random Name" class="rounded" src="img/img_bandmember.jpg">
+              </div>
+              <div class="column text-center">
+                <p>Name</p>
+                <img style="width:60%" alt="Random Name" class="rounded" src="img/img_bandmember.jpg">
+              </div>
+              <div class="column text-center">
+                <p>Name</p>
+                <img style="width:60%" alt="Random Name" class="rounded" src="img/img_bandmember.jpg">
+              </div>
+            </div>
+        </section>
+
+        <div color="black" >
+            <section class="container space-md padding-lg">
+                <h2 class="text-center">TOUR DATES</h2>
+                <p class="text-center"><i>Remember to book your tickets!</i></p>
+                <ul color="white">
+                    <li class="pad-list" >September <span class="label" color="red">Sold out</span></li>
+                    <li class="pad-list" >October <span class="label" color="red">Sold out</span></li>
+                    <li class="pad-list" >November <span data-badge="3" class="badge float-right"></span></li>
+                </ul>
+                <div class="columns" style="margin: 0 -1rem;">
+                    <div class="column">
+                        <div class="card" color="white">
+                            <div class="card-image" color="black" >
+                                <img hover-opacity src="img/img_newyork.jpg" class="img-responsive">
+                            </div>
+                            <div class="card-header">
+                                <h4 class="card-title">New York</h4>
+                                <h6 class="card-meta">Fri 27 Nov 2016</h6>
+                            </div>
+                            <div class="card-body">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" color="black" href="javascript:open_modal('#buyTicket')">Buy Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card" color="white">
+                            <div class="card-image" color="black" >
+                                <img hover-opacity src="img/img_paris.jpg" class="img-responsive">
+                            </div>
+                            <div class="card-header">
+                                <h4 class="card-title">Paris</h4>
+                                <h6 class="card-meta">Sat 28 Nov 2016</h6>
+                            </div>
+                            <div class="card-body">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" color="black" href="javascript:open_modal('#buyTicket')">Buy Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card" color="white">
+                            <div class="card-image" color="black" >
+                                <img hover-opacity src="img/img_sanfran.jpg" class="img-responsive">
+                            </div>
+                            <div class="card-header">
+                                <h4 class="card-title">San Francisco</h4>
+                                <h6 class="card-meta">Sun 29 Nov 2016</h6>
+                            </div>
+                            <div class="card-body">
+                                Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn" color="black" href="javascript:open_modal('#buyTicket')">Buy Ticket</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div color="white">
+            <section class="container space-md padding-lg">
+                <h2 class="text-center">CONTACT</h2>
+                <p class="text-center"><i>Fan? Drop a note!</i></p>
+                <div class="columns">
+                    <div class="column">
+                        <p><span class="icon icon-location"></span> Chicago, US</p>
+                        <p><span class="icon icon-phone"></span> Phone: +00 151515</p>
+                        <p><span class="icon icon-mail" ></span> Email: mail@mail.com</p>
+                    </div>
+                    <div class="column">
+                        <form>
+                            <div class="columns" style="margin-left: -1rem; margin-right: -1rem;">
+                                <div class="column">
+                                    <input type="text" placeholder="Name" class="form-input">
+                                </div>
+                                <div class="column">
+                                    <input type="text" placeholder="Email" class="form-input">
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Comment" class="form-input">
+                            <button color="black" class="btn float-right" style="margin-top: 15px;">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-- Add Google Maps -->
+        <div id="googleMap" style="height:400px;filter:grayscale(90%);-webkit-filter:grayscale(90%);"></div>
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+        var myCenter = new google.maps.LatLng(57.7973333,12.0502107);
+            
+        function initialize() {
+            var mapProp = {
+            center: myCenter,
+            zoom: 12,
+            scrollwheel: false,
+            draggable: false,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+            
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            
+        var marker = new google.maps.Marker({
+            position: myCenter,
+        });
+            
+        marker.setMap(map);
+        }
+            
+        google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+        <div color="white">
+            <section class="footer container space-md padding-xl text-center">
+                <a class="btn trasparent" href="#"><span class="icon icon-facebook"></span></a>
+                <a class="btn trasparent" href="#"><span class="icon icon-pinterest"></span></a>
+                <a class="btn trasparent" href="#"><span class="icon icon-twitter"></span></a>
+                <a class="btn trasparent" href="#"><span class="icon icon-flickr"></span></a>
+                <a class="btn trasparent" href="#"><span class="icon icon-linkedin"></span></a>
+                <p>Powered by <a target="_blank" href="#">myspectre.css</a></p>
+            </section>
+        </div>
+
+
+
+
+
+        <div id="buyTicket" class="modal-container space-md">
+            <div class="modal-header" color="teal">
+                <button class="btn btn-clear float-right" onclick="close_modal(this);"></button>
+                <div class="modal-title text-center"><h1> <span class="icon icon-ticket"></span> Tickets </h1></div>
+            </div>
+            <div class="modal-body">
+                <div class="content">
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label"><span class="icon icon-cart"></span> Tickets, $15 per person</label>
+                            <input type="text" placeholder="How many?" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label"><span class="icon icon-user"></span> Send to</label>
+                            <input type="text" placeholder="Enter email" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-block" color="teal" type="submit" >Pay <span class="icon icon-checkmark"></span> </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn float-left" onclick="close_modal(this);">Close</button>
+                <button class="btn float-rigth">Help</button>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            slide("#myJumbo", 3000);
+        </script>
+    </body>
+</html>

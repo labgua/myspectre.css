@@ -1,0 +1,37 @@
+/* myspectre.css - color box extension v1.0 Sergio Guastaferro */
+/* colors extracted from W3.CSS */
+[color=red],[color=red]:hover,[hover-color=red]:hover {background-color: #f44336 !important;color: #fff !important;}
+[color=pink],[color=pink]:hover,[hover-color=pink]:hover{background-color: #e91e63 !important;color: #fff !important;}
+[color=purple],[color=purple]:hover,[hover-color=purple]:hover{background-color: #9c27b0 !important;color: #fff !important;}
+[color=deep-purple],[color=deep-purple]:hover,[hover-color=deep-purple]:hover{background-color: #673ab7 !important;color: #fff !important;}
+[color=indigo],[color=indigo]:hover,[hover-color=indigo]:hover{background-color: #3f51b5 !important;color: #fff !important;}
+[color=blue],[color=blue]:hover,[hover-color=blue]:hover{background-color: #2196f3 !important;color: #fff !important;}
+[color=light-blue],[color=light-blue]:hover,[hover-color=light-blue]:hover{background-color: #87ceeb !important;color: #000 !important;}
+[color=cyan],[color=cyan]:hover,[hover-color=cyan]:hover{background-color: #00bcd4 !important;color: #000 !important;}
+[color=aqua],[color=aqua]:hover,[hover-color=aqua]:hover{background-color: #00ffff !important;color: #000 !important;}
+[color=teal],[color=teal]:hover,[hover-color=teal]:hover{background-color: #009688 !important;color: #fff !important;}
+[color=green],[color=green]:hover,[hover-color=green]:hover{background-color: #4caf50 !important;color: #fff !important;}
+[color=light-green],[color=light-green]:hover,[hover-color=light-green]:hover{background-color: #8bc34a !important;color: #000 !important;}
+[color=lime],[color=lime]:hover,[hover-color=lime]:hover{background-color: #cddc39 !important;color: #000 !important;}
+[color=sand],[color=sand]:hover,[hover-color=sand]:hover{background-color: #fdf5e6 !important;color: #000 !important;}
+[color=khaki],[color=khaki]:hover,[hover-color=khaki]:hover{background-color: #f0e68c !important;color: #000 !important;}
+[color=yellow],[color=yellow]:hover,[hover-color=yellow]:hover{background-color: #ffeb3b !important;color: #000 !important;}
+[color=amber],[color=amber]:hover,[hover-color=amber]:hover{background-color: #ffc107 !important;color: #000 !important;}
+[color=orange],[color=orange]:hover,[hover-color=orange]:hover{background-color: #ff9800 !important;color: #000 !important;}
+[color=deep-orange],[color=deep-orange]:hover,[hover-color=deep-orange]:hover{background-color: #ff5722 !important;color: #fff !important;}
+[color=blue-grey],[color=blue-grey]:hover,[hover-color=blue-grey]:hover{background-color: #607d8b !important;color: #fff !important;}
+[color=brown],[color=brown]:hover,[hover-color=brown]:hover{background-color: #795548 !important;color: #fff !important;}
+[color=light-grey],[color=light-grey]:hover,[hover-color=light-grey]:hover{background-color: #f1f1f1 !important;color: #000 !important;}
+[color=grey],[color=grey]:hover,[hover-color=grey]:hover{background-color: #9e9e9e !important;color: #000 !important;}
+[color=dark-grey],[color=dark-grey]:hover,[hover-color=dark-grey]:hover{background-color: #616161 !important;color: #fff !important;}
+[color=black],[color=black]:hover,[hover-color=black]:hover{background-color: #000 !important;color: #fff !important;}
+[color=pale-red],[color=pale-red]:hover,[hover-color=pale-red]:hover{background-color: #ffdddd !important;color: #000 !important;}
+[color=pale-yellow],[color=pale-yellow]:hover,[hover-color=pale-yellow]:hover{background-color: #ffffcc !important;color: #000 !important;}
+[color=pale-green],[color=pale-green]:hover,[hover-color=pale-green]:hover{background-color: #ddffdd !important;color: #000 !important;}
+[color=pale-blue],[color=pale-blue]:hover,[hover-color=pale-blue]:hover{background-color: #ddffff !important;color: #000 !important;}
+[color=white],[color=white]:hover,[hover-color=white]:hover{background-color: #fff !important;color: #000 !important;}
+
+[text=white]{color: #fff !important;}
+[text=black]{color: #000 !important;}
+
+[opacity],[hover-opacity]:hover{ opacity:0.60;filter:alpha(opacity=60) }
